@@ -16,13 +16,13 @@ def find_shortest_line(lines):
     return index
 
 
-print("Food Lines \n")
-n, m = input().split()
-n = int(n)
-m = int(m)
-lines = [0] * n
-p = input().split()
-for i in range(0, len(p)):
-    lines[i] = int(p[i])
-
-food_lines(n, m, lines)
+if __name__ == "__main__":
+    print("Food Lines \n")
+    n, m = input().split()
+    n = int(n)
+    m = int(m)
+    lines = [0] * n
+    p = input().split()
+    for i in range(0, len(p)):
+        lines[i] = int(p[i])
+    food_lines(n, m, lines)

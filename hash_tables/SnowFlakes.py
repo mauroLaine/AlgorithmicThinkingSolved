@@ -42,11 +42,13 @@ def find_left_identical(snow1, snow2, start):
     return True
 
 
-# n = int(input())
-# snow_flakes = [0] * n
-# print(snow_flakes)
-# for i in range(0, len(snow_flakes)):
-#     snow_flakes[i] = input()
-# find_identical_snow_flake(snow_flakes)
-snow_flakes = [[1, 2, 3, 4], [4, 3, 2, 1]]
-find_identical_snow_flake(snow_flakes)
+if __name__ == "__main__":
+    n = int(input())
+    snow_flakes = [0] * n
+    print(snow_flakes)
+    for i in range(0, len(snow_flakes)):
+        values = input()
+        values = values.split(" ")
+        snow_flakes[i] = list(map(int, values))
+    print(snow_flakes)
+    find_identical_snow_flake(snow_flakes)
